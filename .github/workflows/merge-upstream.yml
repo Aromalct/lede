@@ -30,10 +30,10 @@ jobs:
         fetch-depth: 0
         lfs: true
 
-   # - name: Set git identity
-   #   run : |
-   #     git config --global user.email "KFER.Mercer@gmail.com"
-   #     git config --global user.name "KFERMercer"
+    - name: Set git identity
+      run : |
+        git config --global user.email "KFER.Mercer@gmail.com"
+        git config --global user.name "KFERMercer"
      
     - name: 加载Lean仓库更新
       run: git pull https://github.com/coolsnowwolf/lede.git --no-edit --strategy-option ours
